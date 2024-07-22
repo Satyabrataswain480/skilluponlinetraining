@@ -1,0 +1,25 @@
+Jenkins installation steps:
+-------------------------------
+
+1. Make sure Java is installed to run Jenkins
+2. JDK 22 is not supported by Jenkins, so install any lower version of java to run jenkins
+    Link - https://www.oracle.com/in/java/technologies/downloads/#jdk17-windows
+3. Once Installed open cmd run below cmds to validate both jre and jdk is installed or not
+    java -version
+	  javac -version
+4. Post validation Download Jenkins Generic Java package (.war) from below link
+	  https://get.jenkins.io/war-stable/2.452.3/jenkins.war
+5. Open up a terminal in the download directory and Run below cmd
+	  java -jar jenkins.war --httpPort=8080
+	  Note - Here port can be anything like 8282, 8283 etc
+6. Copy Administrator Password from cmd
+7. In browser,browse to http://localhost:8080 -> Provide Administrator Password which you have copied from previous step -> Select recommeded plugins
+	  Example - b89baca07f48a68ed14b17e828cd79
+8. Provide new username,password,email etc
+9. Now Configuration is complete, you can browse the page by providing new user name and password
+    user name: satyabrata
+	  password: root
+10. You can download the jenkin msi as well from below link
+    https://get.jenkins.io/windows-stable/2.452.3/jenkins.msi
+
+    Jenkins URL - http://localhost:8283/
