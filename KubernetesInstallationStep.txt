@@ -1,0 +1,20 @@
+Steps to Enable Kubernetes in local machine
+
+1. Open Docker Desktop -> Settings(Rightside top) -> Kubernetes -> Check the Enable Kubernetes -> Hit Apply and Restart
+
+	(It will take some 30-40 mins)
+	
+2. Validate kubectl is installed as part of Kubernetes, if not install Kubectl from below link. Most probably it should already installed as part of step 1, we just need to add the downloaded exe path in environment variables path
+
+
+	https://dl.k8s.io/release/v1.31.0/bin/windows/amd64/kubectl.exe   
+
+3. Install minikube from below link (It is used for creating single node cluster, after instalation only we can run kubectl cmds)
+	https://storage.googleapis.com/minikube/releases/latest/minikube-installer.exe
+	
+4. Start the cluster by using below command
+	minikube start
+
+5. Validate by using below cmd, you will get client version and server version
+		kubectl version
+
