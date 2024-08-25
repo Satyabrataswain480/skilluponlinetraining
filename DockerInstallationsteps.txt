@@ -1,0 +1,20 @@
+Docker Desktop
+
+https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module&_gl=1*1nu7oab*_gcl_au*MTk1MzkxMDUwMi4xNzE4NTE3NDgx*_ga*MTY1ODA1Njc2NC4xNjU1MjkyNTcz*_ga_XJWPQMJYHQ*MTcyMjE2NDQ1Ni40Ny4xLjE3MjIxNjQ0NzIuNDQuMC4w
+
+
+Docker hub account- register
+https://hub.docker.com/
+
+
+Online Docker cmd
+https://labs.play-with-docker.com/
+
+
+intall docker in linux
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+
+Verify docker is installed or not
+docker -v
+
