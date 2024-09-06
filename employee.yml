@@ -1,0 +1,15 @@
+---
+Satya:
+  name: Satyabrata Swain
+  rollNo: 1
+  div: B
+  sex: male
+  subjects:
+    - maths
+    - physics
+    - english
+  skills:
+      - jave
+      - javescript
+      - python
+...

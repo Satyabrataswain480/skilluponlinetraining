@@ -1,0 +1,45 @@
+## Commands to install Ansible in killerkoda
+sudo su
+apt update
+apt install ansible
+
+## Validate the version after installation of Ansible in killerkoda
+ansible --version
+
+## Verify the IP address of nodes
+kubectl get nodes -o wide
+
+## Copy the node IP from above cmd and try to login to node using SSH
+## If connection is successful exit from node
+ssh 172.30.2.2
+exit
+
+##edit the hosts file to add a group and IP address
+nano /etc/ansible/hosts
+	[abc]
+	172.30.2.2
+
+## to exit from hosts
+Cntrl X -> Y -> enter
+
+## To ping all the nodes defined in hosts and check the connectivity
+ansible -m ping all
+
+## Reboot all nodes present in abc group
+ansible abc -a "/sbin/reboot"
+
+##Create a new directory satya in /root in node machine
+ssh node01
+ls
+mkdir satya
+exit
+
+## Copy the hosts file to node machine satya directory , This is a remote copy command
+ansible abc -m ansible.builtin.copy -a "src=/etc/ansible/hosts dest=/root/satya/hosts"
+
+##Validate the hosts file copied or not to destination
+ssh node01
+ls
+ls satya/
+cat satya/hosts
+exit
